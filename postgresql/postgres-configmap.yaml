@@ -7,4 +7,12 @@ metadata:
 data:
   POSTGRES_DB: postgresdb
   POSTGRES_USER: admin
-  POSTGRES_PASSWORD: admin
+
+---
+
+apiVersion: v1
+kind: Secret
+metadata:
+  name: postgres-secret
+data:
+  POSTGRES_PASSWORD: YWRtaW4=
